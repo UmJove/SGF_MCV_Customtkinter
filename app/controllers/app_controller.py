@@ -1,7 +1,8 @@
 import customtkinter as ctk
 from app.models.database import DataBase
 from app.views.login_view import LoginView
-from app.views.dashboard_view import DashboardView
+from app.views.home_view import HomeView
+# from app.views.dashboard_view import DashboardView
 
 class AppController:
     def __init__(self):
@@ -20,18 +21,24 @@ class AppController:
     def login(self, username, password):
         username = None
         password = None
-        self.show_dashboard()
+        self.show_home()
         
     
     def logout(self):
         ...
 
 
-    # Mostrar a tela de dashboard
-    def show_dashboard(self):
+    # Mostrar a tela inicial
+    def show_home(self):
         self.login_view.destroy()
-        self.dashboard_view = DashboardView(self.root, self)
-        self.dashboard_view.pack(fill="both", expand=True)
+        self.home_view = HomeView(self.root, self)
+        self.home_view.pack(fill="both", expand=True)
+
+    # # Mostrar a tela de dashboard
+    # def show_dashboard(self):
+    #     self.login_view.destroy()
+    #     self.dashboard_view = DashboardView(self.root, self)
+    #     self.dashboard_view.pack(fill="both", expand=True)
 
 
     def run(self):
