@@ -6,4 +6,4 @@ class DashboardView(ctk.CTkFrame):
         self.controller = controller
         
         label = ctk.CTkLabel(self, text="Tela de Dashboard!")
-        label.pack
+        label.pack()

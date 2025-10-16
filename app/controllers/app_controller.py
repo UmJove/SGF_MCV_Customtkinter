@@ -17,16 +17,21 @@ class AppController:
         # Criação de admin padrão (se não houver ainda um admin criado)
 
     # Controle de login do usuário
-    def login(self):
-        ...
+    def login(self, username, password):
+        username = None
+        password = None
+        self.show_dashboard()
+        
     
     def logout(self):
         ...
 
 
     # Mostrar a tela de dashboard
-    def show_dashboard_view(self):
-        ...
+    def show_dashboard(self):
+        self.login_view.destroy()
+        self.dashboard_view = DashboardView(self.root, self)
+        self.dashboard_view.pack(fill="both", expand=True)
 
 
     def run(self):
