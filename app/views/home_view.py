@@ -8,9 +8,6 @@ class HomeView(ctk.CTkFrame):
         super().__init__(parent)
         self.controller = controller
         
-        # label = ctk.CTkLabel(self, text="Página Inicial!(Home)")
-        # label.pack()
-
         # Menu lateral (widgets)
         self.side_menu = ctk.CTkFrame(self, width=200)
         self.side_menu.pack(side='left', fill='y', padx=10, pady=10)
