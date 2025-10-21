@@ -25,7 +25,7 @@ class EmployeeModel:
         # Função de consulta (read) não precisa de commit pois estamos pegando do banco, não mudando nada no banco (colocar em notas, depois)
     def get_all_employees(self):
         cursor = self.db.conn.cursor()
-        cursor.execute("SELECT * FROM")
+        cursor.execute("SELECT * FROM") ##### ACHO QUE ANOTEI ERRADO CONFERIR
         return cursor.fetchall()
     
     # Função para pegar funcionário por ID (READ (ONE))
