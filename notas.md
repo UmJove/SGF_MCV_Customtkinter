@@ -303,7 +303,9 @@
 - Vamos trabalhar os Models nessa aula
 
 
-### []()
+### [11SGF | UpDate - Função para Atualizar dados do Usuário | EmployeeModel](https://youtu.be/3OyLPgtqcYw?si=7asfgRbIaonPQJCi)
+#### Função para atualizar dados
+
 
 ### []()
 
