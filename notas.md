@@ -249,9 +249,63 @@
     ```
 
 
-**__**
 ### [08SGF || Trabalhando com o Menu de Funcionários - Parte 1](https://youtu.be/Uh6Uu2jFZbQ?si=Y70lwx1oGEG-0OGn)
-- 
+
+- Em **_employee_view.py_** ele adicionou comentários com tudo que vamos implementar na frame "Funcionários":
+
+    ``` python
+        # Frame de formulário (para cadastro de funcionários)
+
+        # Widgets importantes
+
+        # Frame de listagem de funcionários (ScrollableFrame)
+
+        # Função para adicionar um funcionário
+
+        # Função de atualizar a lista de funcionários após o cadastro ou ao iniciar o sistema
+
+        # Função para exibir detalhes de funcionário
+
+        # Função para atualizar os dados do funcionário
+
+        # Função para deletar funcionário
+    ```
+
+- Nesta aula, criamos duas frames dentro da frame "Funcionários":
+
+    ``` python
+        class EmployeeView(ctk.CTkFrame):
+            def __init__(self, parent, controller):
+                super().__init__(parent)
+                self.controller = controller
+
+                # Frame de formulário (para cadastro de funcionários)
+                header_frame = ctk.CTkFrame(self, fg_color="transparent") #fg_color="transparent"
+                header_frame.pack(fill="x", pady=5)
+                
+                # Frame de listagem de funcionários (ScrollableFrame)
+                self.list_frame = ctk.CTkScrollableFrame(self, fg_color="transparent", label_text="Funcionários cadastrados no Sistema", label_anchor="w", label_font=("Arial bold", 20)) #fg_color="transparent"
+                self.list_frame.pack(fill="both", expand=True, pady=10)
+    ```
+    - Outras partes que ele comentou vão ser implementadas nas próximas videoaulas.
+
+### [09SGF || Grid Layout na Prática - Trabalhando com o Menu de Funcionários - Parte 2](https://youtu.be/0PlVjOV6TjU?si=VqQAkMLA0KB2JSsE)
+- Curiosidade: Ferramenta que ele usa para marcar a tela na video aula (achei interessante)
+    - [Screen Marker & Recorder](https://apps.microsoft.com/detail/9N0FW68W0DFW?hl=neutral&gl=BR&ocid=pdpshare)
+
+
+**__**
+### [10SGF || Trabalhando na Funcionalidade de Salvar novo funcionário no Banco | Models](https://youtu.be/V2_Wf8kz2KM?si=dTjVGmYyoKgmRA2x)
+
+- Explicando a arquitetura MCV
+    - ![alt text](image.png)
+    
+- Vamos trabalhar os Models nessa aula
+
+
+### []()
+
+### []()
 
 ### []()
 
